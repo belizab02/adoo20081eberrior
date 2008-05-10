@@ -1,2 +1,5 @@
 Estructura del Proyecto
-Probadno cristina
+-Casos de Uso
+-Diagramas
+-Prototipos
+-Anexos
