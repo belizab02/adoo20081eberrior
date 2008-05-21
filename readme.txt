@@ -14,7 +14,7 @@ Estructura del Proyecto
 	CU012 - Exportar informe
 	CU013 - Cargar Archivos Adjuntos
 	CU014 - Enviar Notificación
-	CU015 - Notificación RSS
+	CU015 - Enviar Notificación RSS
 -Diagramas
 -Prototipos
 -Anexos
