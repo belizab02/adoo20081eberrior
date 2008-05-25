@@ -1,0 +1,138 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
+<title>Bug Tracker</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<link rel="stylesheet" type="text/css" href="../css/default.css" />
+<script language="javascript" type="text/javascript" src="../script/principal.js"></script>
+</head>
+<body>
+
+<div id="upbg"></div>
+
+<div id="outer">
+
+
+	<div id="header">
+		<div id="headercontent">
+			<h1>BUG TRACKER</h1>
+			<h2>Sistema de Seguimiento de Errores</h2>
+		</div>
+	</div>
+	
+	<form method="post" action="">
+		<div id="search">
+			<input type="button" class="submit" value="Salir" onclick="location.href='../index.html'"/>
+		</div>
+	</form>
+	
+	<div id="headerpic"></div>
+	
+	<div id="menu">
+		<ul>
+			<li><a href="principal.html" class="active">Inicio</a></li>
+			<li><a href="usuarioLista.html" class="active">Usuarios</a></li>
+			<li><a href="proyectoLista.html" class="active">Proyectos</a></li>
+			<li><a href="#" class="active">Reportar Bug</a></li>
+			<li><a href="estadisticos.html" class="active">Estadisticos</a></li>
+		</ul>
+	</div>
+	
+	<div id="menubottom"></div>
+
+	
+	<div id="content">
+		<form>
+		<div id="normalcontent">
+			<h3><strong>Reportar Bug</strong></h3>
+			<div class="contentarea" align="center">
+				<table width="60%" border="0" cellspacing="0" cellpadding="0" class="tblResultados">
+					<tr>
+						<td style="font-weight: bold;" background="../imagenes/diseño/bTable.gif">Titulo</td>
+						<td><input type="text" name="codigo" size="73" maxlength="73"></td>
+					</tr>
+					<tr>
+						<td style="font-weight: bold;" background="../imagenes/diseño/bTable.gif">Descripci&oacute;n</td>
+						<td><textarea name="descripcion" cols="54" rows="10"></textarea></td>
+					</tr>
+					<tr>
+						<td width="100" style="font-weight: bold;" background="../imagenes/diseño/bTable.gif">Estado</td>
+						<td width="500">
+							<select name="estado" id="estado" onchange="javascript:estadoAsignado();">
+								<option value="0">Estado de Bug...</option>
+								<option value="1" selected="true">Nuevo</option>
+								<option value="2">Asignado</option>
+								<option value="3">Pendiente</option>
+								<option value="4">Resuelto</option>
+								<option value="5">Cerrado</option>
+							</select>					
+						</td>
+					</tr>
+					<tr>
+						<td style="font-weight: bold;" background="../imagenes/diseño/bTable.gif">Tipo</td>
+						<td>
+							<select name="tipo">
+								<option value="0">Tipo de Bug...</option>
+								<option value="1">Bloqueador</option>
+								<option value="2">Critico</option>
+								<option value="3">Mayor</option>
+								<option value="4">Normal</option>
+								<option value="5">Menor</option>
+								<option value="6">Trivial</option>
+								<option value="7">Mejora</option>
+							</select>					
+						</td>
+					</tr>
+					<div id="usuarios" class="noMostrar">
+					<tr>
+						<td style="font-weight: bold;" background="../imagenes/diseño/bTable.gif">Usuario Asignado</td>
+						<td>
+							<select name="usuario">
+								<option value="0">Usuario...</option>
+								<option value="1">Carolina Rendon Rendon</option>
+								<option value="2">Diana Cristina Agudelo</option>
+								<option value="3">Elizabeth Berrio Restrepo</option>
+							</select>				
+						</td>
+					</tr>
+					</div>
+					<tr>
+						<td style="font-weight: bold;" background="../imagenes/diseño/bTable.gif">Proyecto</td>
+						<td>
+							<select name="proyecto">
+								<option value="0">Proyecto...</option>
+								<option value="1">N&oacute;mina</option>
+								<option value="2">Administraci&oacute;n</option>
+								<option value="3" selected="true">SEUS</option>
+							</select>				
+						</td>
+					</tr>
+					<tr>
+						<td style="font-weight: bold;" background="../imagenes/diseño/bTable.gif">Adjuntos</td>
+						<td align="right"><a href="javascript:adjuntar();">Adjuntar</a></td>
+					</tr>					
+				</table>
+			</div>
+			<br>
+			<div id="secondarycontent">
+				<div class="box">
+					<a href="javascript:guardar('principal.html');"><h4>Aceptar</h4></a>
+				</div>
+			</div>
+		</div>
+		
+		<div class="divider1"></div>
+
+		</form>
+	</div>
+
+	<div id="footer">
+			<div class="left">&copy; 2008 Bug Tracker. All rights reserved.</div>
+	</div>
+	
+</div>
+
+</body>
+</html>

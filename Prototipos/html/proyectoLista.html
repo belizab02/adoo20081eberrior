@@ -1,0 +1,87 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
+<title>Bug Tracker</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<link rel="stylesheet" type="text/css" href="../css/default.css" />
+<script language="javascript" type="text/javascript" src="../script/principal.js"></script>
+</head>
+<body>
+
+<div id="upbg"></div>
+
+<div id="outer">
+
+
+	<div id="header">
+		<div id="headercontent">
+			<h1>BUG TRACKER</h1>
+			<h2>Sistema de Seguimiento de Errores</h2>
+		</div>
+	</div>
+	
+	<form method="post" action="">
+		<div id="search">
+			<input type="button" class="submit" value="Salir" onclick="location.href='../index.html'"/>
+		</div>
+	</form>
+	
+	<div id="headerpic"></div>
+	
+	<div id="menu">
+		<ul>
+			<li><a href="principal.html" class="active">Inicio</a></li>
+			<li><a href="usuarioLista.html" class="active">Usuarios</a></li>
+			<li><a href="#" class="active">Proyectos</a></li>
+			<li><a href="reportar.html" class="active">Reportar Bug</a></li>
+			<li><a href="estadisticos.html" class="active">Estadisticos</a></li>
+		</ul>
+	</div>
+	
+	<div id="menubottom"></div>
+
+	
+	<div id="content">
+		<form>
+		<div id="normalcontent">
+			<h3><strong>Administraci&oacute;n de Proyectos</strong></h3>
+			<div class="contentarea" align="center">
+				<table width="60%" border="0" cellspacing="0" cellpadding="0" class="tblResultados">
+					<tr>
+						<td style="font-weight: bold;" background="../imagenes/diseño/bTable.gif">Proyectos</td>
+						<td>
+							<select name="proyecto" id="proyecto">
+								<option value="0">Proyecto...</option>
+								<option value="1">N&oacute;mina</option>
+								<option value="2">Administraci&oacute;n</option>
+								<option value="3">SEUS</option>
+							</select>				
+						</td>
+					</tr>	
+				</table>
+			</div>
+			<br>
+			<div id="secondarycontent">
+				<div class="box">
+					<a href="javascript:modificarProyecto();"><h4>Actualizar Proyecto</h4></a>
+					<p><br>
+					<a href="proyectoCrear.html"><h4>Crear Proyecto</h4></a>
+				</div>
+			</div>
+		</div>
+		
+		<div class="divider1"></div>
+
+		</form>
+	</div>
+
+	<div id="footer">
+			<div class="left">&copy; 2008 Bug Tracker. All rights reserved.</div>
+	</div>
+	
+</div>
+
+</body>
+</html>

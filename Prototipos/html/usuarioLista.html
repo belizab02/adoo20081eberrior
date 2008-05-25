@@ -1,0 +1,90 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
+<title>Bug Tracker</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<link rel="stylesheet" type="text/css" href="../css/default.css" />
+<script language="javascript" type="text/javascript" src="../script/principal.js"></script>
+</head>
+<body>
+
+<div id="upbg"></div>
+
+<div id="outer">
+
+
+	<div id="header">
+		<div id="headercontent">
+			<h1>BUG TRACKER</h1>
+			<h2>Sistema de Seguimiento de Errores</h2>
+		</div>
+	</div>
+	
+	<form method="post" action="">
+		<div id="search">
+			<input type="button" class="submit" value="Salir" onclick="location.href='../index.html'"/>
+		</div>
+	</form>
+	
+	<div id="headerpic"></div>
+	
+	<div id="menu">
+		<ul>
+			<li><a href="principal.html" class="active">Inicio</a></li>
+			<li><a href="#" class="active">Usuarios</a></li>
+			<li><a href="proyectoLista.html" class="active">Proyectos</a></li>
+			<li><a href="reportar.html" class="active">Reportar Bug</a></li>
+			<li><a href="estadisticos.html" class="active">Estadisticos</a></li>
+		</ul>
+	</div>
+	
+	<div id="menubottom"></div>
+
+	
+	<div id="content">
+		<form>
+		<div id="normalcontent">
+			<h3><strong>Administraci&oacute;n de Usuarios</strong></h3>
+			<div class="contentarea" align="center">
+				<table width="60%" border="0" cellspacing="0" cellpadding="0" class="tblResultados">
+					<tr>
+						<td width="100" style="font-weight: bold;" background="../imagenes/diseño/bTable.gif">Identificaci&oacute;n</td>
+						<td style="font-weight: bold;" >Tipo</td>
+						<td width="500">
+							<select name="tipo" id="tipo">
+								<option value="0">Tipo...</option>
+								<option value="1">Cedula</option>
+								<option value="2">Tarjeta de Identidad</option>
+								<option value="3">Cedula de Extranjeria</option>
+							</select>					
+						</td>
+						<td style="font-weight: bold;" >N&uacute;mero</td>
+						<td><input type="text" name="numero" id="numero" size="20" maxlength="20"></td>
+					</tr>	
+				</table>
+			</div>
+			<br>
+			<div id="secondarycontent">
+				<div class="box">
+					<a href="javascript:modificarUsuario();"><h4>Actualizar Usuario</h4></a>
+					<p><br>
+					<a href="usuarioCrear.html"><h4>Crear Usuario</h4></a>
+				</div>
+			</div>
+		</div>
+		
+		<div class="divider1"></div>
+
+		</form>
+	</div>
+
+	<div id="footer">
+			<div class="left">&copy; 2008 Bug Tracker. All rights reserved.</div>
+	</div>
+	
+</div>
+
+</body>
+</html>
