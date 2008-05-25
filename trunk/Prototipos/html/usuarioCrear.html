@@ -1,0 +1,131 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
+<title>Bug Tracker</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<link rel="stylesheet" type="text/css" href="../css/default.css" />
+<script language="javascript" type="text/javascript" src="../script/principal.js"></script>
+</head>
+<body>
+
+<div id="upbg"></div>
+
+<div id="outer">
+
+
+	<div id="header">
+		<div id="headercontent">
+			<h1>BUG TRACKER</h1>
+			<h2>Sistema de Seguimiento de Errores</h2>
+		</div>
+	</div>
+	
+	<form method="post" action="">
+		<div id="search">
+			<input type="button" class="submit" value="Salir" onclick="location.href='../index.html'"/>
+		</div>
+	</form>
+	
+	<div id="headerpic"></div>
+	
+	<div id="menu">
+		<ul>
+			<li><a href="principal.html" class="active">Inicio</a></li>
+			<li><a href="usuarioLista.html" class="active">Usuarios</a></li>
+			<li><a href="proyectoLista.html" class="active">Proyectos</a></li>
+			<li><a href="reportar.html" class="active">Reportar Bug</a></li>
+			<li><a href="estadisticos.html" class="active">Estadisticos</a></li>
+		</ul>
+	</div>
+	
+	<div id="menubottom"></div>
+
+	
+	<div id="content">
+		<form>
+		<div id="normalcontent">
+			<h3><strong>Crear Usuario</strong></h3>
+			<div class="contentarea" align="center">
+				<table width="60%" border="0" cellspacing="0" cellpadding="0" class="tblResultados">
+					<tr>
+						<td style="font-weight: bold;" background="../imagenes/diseño/bTable.gif">Identificaci&oacute;n</td>
+						<td style="font-weight: bold;" align="right">Tipo</td>
+						<td>
+							<select name="tipo">
+								<option value="0">Tipo...</option>
+								<option value="1">Cedula</option>
+								<option value="2">Tarjeta de Identidad</option>
+								<option value="3">Cedula de Extranjeria</option>
+							</select>					
+						</td>
+						<td style="font-weight: bold;">N&uacute;mero</td>
+						<td><input type="text" name="numero" size="20" maxlength="20"></td>
+					</tr>	
+					<tr>
+						<td width="100" style="font-weight: bold;" background="../imagenes/diseño/bTable.gif">Nombre</td>
+						<td colspan="4"><input type="text" name="nombre" size="73" maxlength="73"></td>
+					</tr>	
+					<tr>
+						<td width="100" style="font-weight: bold;" background="../imagenes/diseño/bTable.gif">E-mail</td>
+						<td colspan="4"><input type="text" name="email" size="73" maxlength="73"></td>
+					</tr>	
+					<tr>
+						<td width="100" style="font-weight: bold;" background="../imagenes/diseño/bTable.gif">Tel&eacute;fono Fijo</td>
+						<td colspan="4"><input type="text" name="telfijo" size="73" maxlength="73"></td>
+					</tr>	
+					<tr>
+						<td width="100" style="font-weight: bold;" background="../imagenes/diseño/bTable.gif">Tel&eacute;fono Celular</td>
+						<td colspan="4"><input type="text" name="telcel" size="73" maxlength="73"></td>
+					</tr>	
+					<tr>
+						<td width="100" style="font-weight: bold;" background="../imagenes/diseño/bTable.gif">Usuario</td>
+						<td colspan="4"><input type="text" name="usuario" size="73" maxlength="73"></td>
+					</tr>	
+					<tr>
+						<td width="100" style="font-weight: bold;" background="../imagenes/diseño/bTable.gif">Clave</td>
+						<td colspan="4"><input type="password" name="clave" size="73" maxlength="73"></td>
+					</tr>	
+					<tr>
+						<td width="100" style="font-weight: bold;" background="../imagenes/diseño/bTable.gif">Repetir Clave</td>
+						<td colspan="4"><input type="password" name="clave2" size="73" maxlength="73"></td>
+					</tr>	
+					<tr>
+						<td width="100" style="font-weight: bold;" background="../imagenes/diseño/bTable.gif">Proyectos</td>
+						<td colspan="2">
+							N&oacute;mina<br>
+							Administraci&oacute;n<br>
+							SEUS
+						</td>
+						<td colspan="2">
+							<input type="checkbox" name="proyecto"  value="1"><br>
+							<input type="checkbox" name="proyecto"  value="2"><br>
+							<input type="checkbox" name="proyecto"  value="3">
+						</td>
+					</tr>	
+				</table>
+			</div>
+			<br>
+			<div id="secondarycontent">
+				<div class="box">
+					<a href="javascript:guardar('usuarioLista.html');"><h4>Aceptar</h4></a>
+					<p><br>
+					<a href="usuarioLista.html"><h4>Regresar</h4></a>
+				</div>
+			</div>
+		</div>
+		
+		<div class="divider1"></div>
+
+		</form>
+	</div>
+
+	<div id="footer">
+			<div class="left">&copy; 2008 Bug Tracker. All rights reserved.</div>
+	</div>
+	
+</div>
+
+</body>
+</html>

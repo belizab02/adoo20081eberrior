@@ -1,0 +1,213 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
+<title>Bug Tracker</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<link rel="stylesheet" type="text/css" href="../css/default.css" />
+<script language="javascript" type="text/javascript" src="../script/principal.js"></script>
+</head>
+<body>
+
+<div id="upbg"></div>
+
+<div id="outer">
+
+
+	<div id="header">
+		<div id="headercontent">
+			<h1>BUG TRACKER</h1>
+			<h2>Sistema de Seguimiento de Errores</h2>
+		</div>
+	</div>
+	
+	<form method="post" action="">
+		<div id="search">
+			<input type="button" class="submit" value="Salir" onclick="location.href='../index.html'"/>
+		</div>
+	</form>
+	
+	<div id="headerpic"></div>
+	
+	<div id="menu">
+		<ul>
+			<li><a href="#" class="active">Inicio</a></li>
+			<li><a href="usuarioLista.html" class="active">Usuarios</a></li>
+			<li><a href="proyectoLista.html" class="active">Proyectos</a></li>
+			<li><a href="reportar.html" class="active">Reportar Bug</a></li>
+			<li><a href="estadisticos.html" class="active">Estadisticos</a></li>
+		</ul>
+	</div>
+	
+	<div id="menubottom"></div>
+
+	
+	<div id="content">
+		<form>
+		<div id="normalcontent">
+			<h3><strong>Filtrar Bugs</strong></h3>
+			<div class="contentarea">
+				<table width="100%" border="0" cellspacing="0" cellpadding="0" class="tblResultados">
+					<tr>
+						<th>C&oacute;digo</th>
+						<th>Usuario</th>
+						<th>Proyecto</th>
+						<th>Tipo</th>
+						<th>Estado</th>
+					</tr>
+					<tr>
+						<td><input type="text" name="codigo" size="12" maxlength="10" onkeydown="javascript:numero(this)" onkeyup="javascript:numero(this)"></td>
+						<td>
+							<select name="usuario">
+								<option value="0">Usuario...</option>
+								<option value="1">Carolina Rendon Rendon</option>
+								<option value="2">Diana Cristina Agudelo</option>
+								<option value="3">Elizabeth Berrio Restrepo</option>
+							</select>					
+						</td>
+						<td>
+							<select name="proyecto">
+								<option value="0">Proyecto...</option>
+								<option value="1">N&oacute;mina</option>
+								<option value="2">Administraci&oacute;n</option>
+								<option value="3">SEUS</option>
+							</select>					
+						</td>
+						<td>
+							<select name="tipo">
+								<option value="0">Tipo de Bug...</option>
+								<option value="1">Bloqueador</option>
+								<option value="2">Critico</option>
+								<option value="3">Mayor</option>
+								<option value="4">Normal</option>
+								<option value="5">Menor</option>
+								<option value="6">Trivial</option>
+								<option value="7">Mejora</option>
+							</select>					
+						</td>
+						<td>
+							<select name="tipo">
+								<option value="0">Estado de Bug...</option>
+								<option value="1">Nuevo</option>
+								<option value="2">Asignado</option>
+								<option value="3">Pendiente</option>
+								<option value="4">Resuelto</option>
+								<option value="5">Cerrado</option>
+							</select>					
+						</td>
+					</tr>
+				</table>
+				<table width="100%" border="0" cellspacing="0" cellpadding="0" class="tblResultados">
+					<tr>
+						<th colspan="2">Fecha de Creaci&oacute;n</th>
+						<th colspan="2">Fecha de Cierre</th>
+						<th colspan="2">Tiempos de Soluci&oacute;n</th>
+					</tr>
+					<tr>
+						<td colspan="2">
+							Inicial &nbsp;<input type="text" name="feCreacionIni" id="feCreacionIni" size="12" maxlength="10" readonly="true">
+							&nbsp;<a href="javascript:calendario('feCreacionIni')"><img src="../imagenes/iconos/calendario.gif" alt="Haga clic aqu&iacute; para ver el calendario" align="absmiddle" border="0" /></a>
+						</td>
+						<td colspan="2">
+							Inicial &nbsp;<input type="text" name="feCierreIni" id="feCierreIni" size="12" maxlength="10" readonly="true">
+							&nbsp;<a href="javascript:calendario('feCierreIni')"><img src="../imagenes/iconos/calendario.gif" alt="Haga clic aqu&iacute; para ver el calendario" align="absmiddle" border="0" /></a>
+						</td>
+						<td colspan="2">
+							Inicial &nbsp;<input type="text" name="tiempoIni" id="tiempoIni" size="12" maxlength="10" onkeydown="javascript:numero(this)" onkeyup="javascript:numero(this)">
+						</td>
+					</tr>
+					<tr>
+						<td colspan="2">
+							Final &nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="feCreacionFin" id="feCreacionFin" size="12" maxlength="10" readonly="true">
+							&nbsp;<a href="javascript:calendario('feCreacionFin')"><img src="../imagenes/iconos/calendario.gif" alt="Haga clic aqu&iacute; para ver el calendario" align="absmiddle" border="0" /></a>
+						</td>
+						<td colspan="2">
+							Final &nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="feCierreFin" id="feCierreFin" size="12" maxlength="10" readonly="true">
+							&nbsp;<a href="javascript:calendario('feCierreFin')"><img src="../imagenes/iconos/calendario.gif" alt="Haga clic aqu&iacute; para ver el calendario" align="absmiddle" border="0" /></a>
+						</td>
+						<td colspan="2">
+							Final &nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="tiempoFin" id="tiempoFin" size="12" maxlength="10" onkeydown="javascript:numero(this)" onkeyup="javascript:numero(this)">
+						</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+		<br>
+			<div id="secondarycontent">
+				<div class="box">
+					<a href="javascript:filtrar()"><h4>Filtrar</h4></a>
+				</div>
+			</div>
+		<div class="divider1"></div>
+
+		<div id="primarycontainer">
+			<div id="normalcontent">
+				<h4>BUGS</h4>
+				<div class="contentarea">
+					<div class="details">Bugs abiertos: Nuevo, Asignado, Pendiente, Resuelto.</div>	
+					<br>
+					<table width="100%" border="0" cellspacing="0" cellpadding="0" class="tblResultados">
+						<tr>
+							<th>C&oacute;digo</th>
+							<th>Titulo</th>
+							<th>Tipo</th>
+							<th>Estado</th>
+							<th>Usuario</th>
+							<th>Fecha</th>
+						</tr>
+						<tr>
+							<td width="10%"><a href="javascript:consultar('000025')">000025</a></td>
+							<td width="30%"><input type="text" style="border:0;text-align: center;" size="40" value="Error al Guardar Expediente"></td>
+							<td width="10%"><input type="text" style="border:0;text-align: center;" size="12" value="Critico"></td>
+							<td width="10%"><input type="text" style="border:0;text-align: center;" size="12" value="Nuevo"></td>
+							<td width="30%"><input type="text" style="border:0;text-align: center;" size="40" value="Elizabeth Berrio Restrepo"></td>
+							<td width="10%"><input type="text" style="border:0;text-align: center;" size="12" value="2008/05/26"></td>
+						</tr>
+						<tr>
+							<td width="10%"><a href="javascript:consultar('000045')">000045</a></td>
+							<td width="30%"><input type="text" style="border:0;text-align: center;" size="40" value="Error al Asignar Recurso"></td>
+							<td width="10%"><input type="text" style="border:0;text-align: center;" size="12" value="Critico"></td>
+							<td width="10%"><input type="text" style="border:0;text-align: center;" size="12" value="Asignado"></td>
+							<td width="30%"><input type="text" style="border:0;text-align: center;" size="40" value="Elizabeth Berrio Restrepo"></td>
+							<td width="10%"><input type="text" style="border:0;text-align: center;" size="12" value="2008/05/25"></td>
+						</tr>
+						<tr>
+							<td width="10%"><a href="javascript:consultar('000049')">000049</a></td>
+							<td width="30%"><input type="text" style="border:0;text-align: center;" size="40" value="Error de Javascript"></td>
+							<td width="10%"><input type="text" style="border:0;text-align: center;" size="12" value="Menor"></td>
+							<td width="10%"><input type="text" style="border:0;text-align: center;" size="12" value="Asignado"></td>
+							<td width="30%"><input type="text" style="border:0;text-align: center;" size="40" value="Elizabeth Berrio Restrepo"></td>
+							<td width="10%"><input type="text" style="border:0;text-align: center;" size="12" value="2008/05/24"></td>
+						</tr>
+						<tr>
+							<td width="10%"><a href="javascript:consultar('000059')">000059</a></td>
+							<td width="30%"><input type="text" style="border:0;text-align: center;" size="40" value="Tildes en vista principal"></td>
+							<td width="10%"><input type="text" style="border:0;text-align: center;" size="12" value="Trivial"></td>
+							<td width="10%"><input type="text" style="border:0;text-align: center;" size="12" value="Resuelto"></td>
+							<td width="30%"><input type="text" style="border:0;text-align: center;" size="40" value="Elizabeth Berrio Restrepo"></td>
+							<td width="10%"><input type="text" style="border:0;text-align: center;" size="12" value="2008/05/21"></td>
+						</tr>
+					</table>
+				</div>
+			</div>
+			<div class="divider2"></div>
+		</div>
+		
+		<div id="secondarycontent">
+			<div class="box">
+				<a href="javascript:exportar()"><h4>Exportar a Excel</h4></a>
+			</div>
+		</div>
+		
+		</form>
+	</div>
+
+	<div id="footer">
+			<div class="left">&copy; 2008 Bug Tracker. All rights reserved.</div>
+	</div>
+	
+</div>
+
+</body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
+<title>Bug Tracker</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<link rel="stylesheet" type="text/css" href="../css/default.css" />
+<script language="javascript" type="text/javascript" src="../script/principal.js"></script>
+</head>
+<body>
+
+<div id="upbg"></div>
+
+<div id="outer">
+
+
+	<div id="header">
+		<div id="headercontent">
+			<h1>BUG TRACKER</h1>
+			<h2>Sistema de Seguimiento de Errores</h2>
+		</div>
+	</div>
+	
+	<form method="post" action="">
+		<div id="search">
+			<input type="button" class="submit" value="Salir" onclick="location.href='../index.html'"/>
+		</div>
+	</form>
+	
+	<div id="headerpic"></div>
+	
+	<div id="menu">
+		<ul>
+			<li><a href="principal.html" class="active">Inicio</a></li>
+			<li><a href="usuarioLista.html" class="active">Usuarios</a></li>
+			<li><a href="proyectoLista.html" class="active">Proyectos</a></li>
+			<li><a href="reportar.html" class="active">Reportar Bug</a></li>
+			<li><a href="estadisticos.html" class="active">Estadisticos</a></li>
+		</ul>
+	</div>
+	
+	<div id="menubottom"></div>
+
+	
+	<div id="content">
+		<form>
+		<div id="normalcontent">
+			<h3><strong>Actualizar Proyecto</strong></h3>
+			<div class="contentarea" align="center">
+				<table width="60%" border="0" cellspacing="0" cellpadding="0" class="tblResultados">
+					<tr>
+						<td style="font-weight: bold;" background="../imagenes/diseño/bTable.gif">C&oacute;digo</td>
+						<td><input type="text" name="numero" size="20" maxlength="20" value="014100" readonly="true"></td>
+					</tr>	
+					<tr>
+						<td style="font-weight: bold;" background="../imagenes/diseño/bTable.gif">Identificador</td>
+						<td><input type="text" name="numero" size="20" maxlength="20" value="appSeus" readonly="true"></td>
+					</tr>	
+					<tr>
+						<td style="font-weight: bold;" background="../imagenes/diseño/bTable.gif">Nombre</td>
+						<td><input type="text" name="nombre" size="73" maxlength="73" value="SEUS"></td>
+					</tr>	
+					<tr>
+						<td style="font-weight: bold;" background="../imagenes/diseño/bTable.gif">Descripci&oacute;n</td>
+						<td><input type="text" name="email" size="73" maxlength="73" value="Sistema de seguridad de CAP."></td>
+					</tr>	
+					<tr>
+						<td style="font-weight: bold;" background="../imagenes/diseño/bTable.gif">Responsable</td>
+						<td>
+							<select name="usuario">
+								<option value="0">Usuario...</option>
+								<option value="1" selected="true">Carolina Rendon Rendon</option>
+								<option value="2">Diana Cristina Agudelo</option>
+								<option value="3">Elizabeth Berrio Restrepo</option>
+							</select>
+						</td>
+					</tr>	
+					<tr>
+						<td style="font-weight: bold;" background="../imagenes/diseño/bTable.gif">Fecha de Alta</td>
+						<td>
+							<input type="text" name="feCreacion" size="12" maxlength="12" value="2008/05/02" readonly="true">
+						</td>
+					</tr>	
+					<tr>
+						<td style="font-weight: bold;" background="../imagenes/diseño/bTable.gif">Fecha de Baja</td>
+						<td>
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="feBaja"  id="feBaja"  size="12" maxlength="12" readonly="true">
+							&nbsp;<a href="javascript:calendario('feBaja')"><img src="../imagenes/iconos/calendario.gif" alt="Haga clic aqu&iacute; para ver el calendario" align="absmiddle" border="0" /></a>
+						</td>
+					</tr>
+				</table>
+			</div>
+			<br>
+			<div id="secondarycontent">
+				<div class="box">
+					<a href="javascript:guardar('proyectoLista.html');"><h4>Aceptar</h4></a>
+					<p><br>
+					<a href="proyectoLista.html"><h4>Regresar</h4></a>
+				</div>
+			</div>
+		</div>
+		
+		<div class="divider1"></div>
+
+		</form>
+	</div>
+
+	<div id="footer">
+			<div class="left">&copy; 2008 Bug Tracker. All rights reserved.</div>
+	</div>
+	
+</div>
+
+</body>
+</html>

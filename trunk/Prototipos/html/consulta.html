@@ -1,0 +1,171 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
+<title>Bug Tracker</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<link rel="stylesheet" type="text/css" href="../css/default.css" />
+<script language="javascript" type="text/javascript" src="../script/principal.js"></script>
+</head>
+<body>
+
+<div id="upbg"></div>
+
+<div id="outer">
+
+
+	<div id="header">
+		<div id="headercontent">
+			<h1>BUG TRACKER</h1>
+			<h2>Sistema de Seguimiento de Errores</h2>
+		</div>
+	</div>
+	
+	<form method="post" action="">
+		<div id="search">
+			<input type="button" class="submit" value="Salir" onclick="location.href='../index.html'"/>
+		</div>
+	</form>
+	
+	<div id="headerpic"></div>
+	
+	<div id="menu">
+		<ul>
+			<li><a href="principal.html" class="active">Inicio</a></li>			
+			<li><a href="usuarioLista.html" class="active">Usuarios</a></li>
+			<li><a href="proyectoLista.html" class="active">Proyectos</a></li>
+			<li><a href="reportar.html" class="active">Reportar Bug</a></li>
+			<li><a href="estadisticos.html" class="active">Estadisticos</a></li>
+		</ul>
+	</div>
+	
+	<div id="menubottom"></div>
+
+	
+	<div id="content">
+		<form>
+		<div id="normalcontent">
+			<h3><strong>Bug 000059</strong></h3>
+			<div class="contentarea" align="center">
+				<table width="50%" border="0" cellspacing="0" cellpadding="0" class="tblResultados">
+					<tr>
+						<td style="font-weight: bold;" background="../imagenes/diseño/bTable.gif">Titulo</td>
+						<td>Tildes en vista principal</td>
+					</tr>
+					<tr>
+						<td style="font-weight: bold;" background="../imagenes/diseño/bTable.gif">Descripci&oacute;n</td>
+						<td>En la jsp de bienvenida inicial.jsp se faltan las tildes en los titulos y los subtitulos.</td>
+					</tr>
+					<tr>
+						<td style="font-weight: bold;" background="../imagenes/diseño/bTable.gif">Tipo</td>
+						<td>Trivial</td>
+					</tr>
+					<tr>
+						<td style="font-weight: bold;" background="../imagenes/diseño/bTable.gif">Usuario</td>
+						<td>Elizabeth Berrio Restrepo</td>
+					</tr>
+					<tr>
+						<td style="font-weight: bold;" background="../imagenes/diseño/bTable.gif">Fecha de Creación</td>
+						<td>2008/05/21</td>
+					</tr>
+					<tr>
+						<td style="font-weight: bold;" background="../imagenes/diseño/bTable.gif">Fecha de Cierre</td>
+						<td>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<input type="text" name="feCierre" id="feCierre" style="border:0" value="" readonly="true"></td>
+					</tr>
+					<tr>
+						<td style="font-weight: bold;" background="../imagenes/diseño/bTable.gif">Adjuntos</td>
+						<td><a href="javascript:alert('Se descarga archivo adjunto.')">pantallazo.jpg</a></td>
+					</tr>
+					<tr>
+						<td style="font-weight: bold;" background="../imagenes/diseño/bTable.gif">Estado Actual</td>
+						<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<input type="text" name="estado" id="estado" style="border:0" value="Resuelto" readonly="true"></td>
+					</tr>
+				</table>
+			</div>
+			<br>
+			<div id="secondarycontent">
+				<div class="box">
+					<a href="modificar.html"><h4>Modificar Estado</h4></a>
+					<p><br>
+					<a href="javascript:cerrar();"><h4>Cerrar Bug</h4></a>
+				</div>
+			</div>
+		</div>
+		
+		<div class="divider1"></div>
+
+		<div id="primarycontainer">
+			<div id="normalcontent">
+				<h4>Historial</h4>
+				<div class="contentarea" align="center">
+					<div class="details" align="left">Historia del Bug</div>	
+					<br>
+					<table width="100%" border="0" cellspacing="0" cellpadding="0" class="tblResultados">
+						<tr>
+							<th colspan="4">Anotaci&oacute;n 1</th>
+						</tr>
+						<tr>
+							<td width="200" style="font-weight: bold;" background="../imagenes/diseño/bTable.gif">Fecha</td>
+							<td width="1000">2008/05/21</td>
+						</tr>
+						<tr>
+							<td style="font-weight: bold;" background="../imagenes/diseño/bTable.gif">Estado</td>
+							<td>Asignado</td>
+						</tr>
+						<tr>
+							<td style="font-weight: bold;" background="../imagenes/diseño/bTable.gif">Tiempo Soluci&oacute;n (min)</td>
+							<td>10</td>
+						</tr>
+						<tr>
+							<td style="font-weight: bold;" background="../imagenes/diseño/bTable.gif">Descripci&oacute;n</td>
+							<td>Se asigno el bug a Elizabeth Berrio Restrepo que es la persona responsable de la vista de bienvenida.</td>
+						</tr>
+						<tr>
+							<td style="font-weight: bold;" background="../imagenes/diseño/bTable.gif">Adjuntos</td>
+							<td>&nbsp;</td>
+						</tr>
+					</table>
+					<table width="100%" border="0" cellspacing="0" cellpadding="0" class="tblResultados">
+						<tr>
+							<th colspan="4">Anotaci&oacute;n 2</th>
+						</tr>
+						<tr>
+							<td width="200" style="font-weight: bold;" background="../imagenes/diseño/bTable.gif">Fecha</td>
+							<td width="1000">2008/05/23</td>
+						</tr>
+						<tr>
+							<td style="font-weight: bold;" background="../imagenes/diseño/bTable.gif">Estado</td>
+							<td>Resuelto</td>
+						</tr>
+						<tr>
+							<td style="font-weight: bold;" background="../imagenes/diseño/bTable.gif">Tiempo Soluci&oacute;n (min)</td>
+							<td>10</td>
+						</tr>
+						<tr>
+							<td style="font-weight: bold;" background="../imagenes/diseño/bTable.gif">Descripci&oacute;n</td>
+							<td>En la jsp de bienvenida inicial.jsp se colocaron las tildes en los titulos y los subtitulos.</td>
+						</tr>
+						<tr>
+							<td style="font-weight: bold;" background="../imagenes/diseño/bTable.gif">Adjuntos</td>
+							<td>&nbsp;</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+			<div class="divider2"></div>
+		</div>
+		</form>
+	</div>
+
+	<div id="footer">
+			<div class="left">&copy; 2008 Bug Tracker. All rights reserved.</div>
+	</div>
+	
+</div>
+
+</body>
+</html>
